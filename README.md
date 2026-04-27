@@ -23,7 +23,11 @@ Isso evita o uso de números de ponto flutuante, tornando o algoritmo eficiente 
 7. repte-se passos 4, 5 e 6 até o ponto final.  
 
 ## O que o repositório fornece?
-Uma implenetação do núcelo matemático do algoritmo, focando em 2 maneiras diferentes de implentar a lógica e o núcelo matemático. Uma utilizando lógica de passo, que identifica qual delta é o maior e indica qual o eixo dominante, ele serve também, como um limite para a contagem do loop For. A outra maneira, elimina a dependência dessa lógica da passo, utilizando um While com condição sempre verdadeira e a partir do momento que o X e Y atigem o xf e yf, o loop quebra pra finalizar o cálculo.  
+Uma implementação do núcleo matemático do algoritmo, explorando duas abordagens:
+* Com eixo dominante:  
+    Identifica qual delta é maior para definir o eixo principal e o limite do loop (for).  
+* Sem eixo dominante explícito:  
+    Utiliza um while contínuo e encerra quando (x, y) atinge (x_f, y_f). 
 
 ## Por que em Java e em Python?
 A proposta é comparar como cada linguagem se comporta na implementação do mesmo algoritmo, destacando diferenças de sintaxe, controle de fluxo e expressividade.
